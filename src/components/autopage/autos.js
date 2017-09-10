@@ -3,21 +3,74 @@ import { connect } from 'react-redux';
 
 /** import components **/
 import NavBar from '../share/navbar';
-// import AutoPageBody from './auto-page-body';
 
 /** import action helpers **/
 import {fetchAllCars} from '../../actions';
 
+
+import ComputerView from './computer';
+import MobileView from './mobile';
+
 class Autos extends Component{
+
+  constructor(props){
+    super(props);
+    this.state={selectedCar:{},
+                width:window.innerWidth};
+    this.handleSelectedCar = this.handleSelectedCar.bind(this);
+  }
   
+  /** handle screen change **/
+  componentWillMount() {
+    this.props.fetchAllCars();
+    window.addEventListener('resize', this.handleWindowSizeChange);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleWindowSizeChange);
+  }
+
+  handleWindowSizeChange = () => {
+    this.setState({ width: window.innerWidth });
+  };
+  
+  /** change selected car **/
+  handleSelectedCar(car){
+    console.log(car)
+    this.setState({selectedCar:car});
+  }
+  
+  /** display different components base on screen size **/
+  handleComponentChange(isMobile){
+    if(isMobile){
+      return(
+        <MobileView
+          cars = {this.props.cars} 
+          handleSelectedCar= {this.handleSelectedCar} 
+          selectedCar={this.state.selectedCar}
+        />
+      )
+    }
+    return(
+      <ComputerView 
+        cars = {this.props.cars} 
+        handleSelectedCar= {this.handleSelectedCar} 
+        selectedCar={this.state.selectedCar}
+      />
+    )
+  }
 
   render(){
+    const { width } = this.state;
+    const isMobile = width < 770;
     return(
       <div>
         <NavBar />
+        {this.handleComponentChange(isMobile)}
       </div>
     )
-  }
+  }  
+  
 }
 
 function mapStateToProps(state){
@@ -26,4 +79,4 @@ function mapStateToProps(state){
   }
 }
 
-export default connect(mapStateToProps)(Autos);
+export default connect(mapStateToProps,{fetchAllCars})(Autos);

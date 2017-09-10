@@ -1,0 +1,31 @@
+body, html {
+  height: 100vh; }
+
+nav {
+  position: absolute;
+  z-index: 5; }
+
+.container {
+  width: 100%; }
+
+.showcars {
+  position: relative;
+  top: 100px;
+  width: 1000px;
+  background-color: white;
+  overflow: auto;
+  max-height: 80vh; }
+  @media screen and (max-width: 750px) {
+    .showcars {
+      max-height: 100%;
+      overflow: none; } }
+
+.showdetails {
+  position: relative;
+  text-align: center;
+  top: 100px;
+  width: 1000px;
+  overflow: auto;
+  max-height: 600px; }
+
+/*# sourceMappingURL=index.css.map */

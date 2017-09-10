@@ -1,0 +1,38 @@
+body,html{
+  height:100vh;
+}
+
+nav{
+  position:absolute;
+  z-index:5;
+}
+
+.container{
+  width:100%;
+}
+
+@mixin carContainer{
+  top:100px;
+  width:1000px;
+}
+
+.showcars{
+  position:relative;
+  @include carContainer;
+  background-color:white;
+  overflow: auto; 
+  max-height:80vh;
+
+  @media screen and (max-width:750px){
+    max-height:100%;
+    overflow:none;
+  }
+}
+
+.showdetails{
+    position:relative;
+    text-align:center;
+    @include carContainer;
+    overflow:auto;
+    max-height:600px;
+}
