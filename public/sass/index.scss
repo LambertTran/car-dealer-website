@@ -1,5 +1,33 @@
+@mixin typing{
+  display: inline-block;
+  width: 100%;
+  white-space:nowrap;
+  overflow:hidden;
+  -webkit-animation: type 5s steps(50, end) alternate;
+  animation: type 5s steps(50, end) alternate;
+  @keyframes type{
+      from { width: 0; }
+  }
+  @-webkit-keyframes type{
+      from { width: 0;  }
+  }
+}
+
+@mixin centerProps{
+  position:relative;
+  margin: auto;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
+@mixin carContainer{
+  top:100px;
+  width:1000px;
+}
+
 body,html{
-  height:100vh;
 }
 
 nav{
@@ -7,14 +35,48 @@ nav{
   z-index:5;
 }
 
+.home{
+  height:100vh;
+  width:100vw;
+  // background-repeat:no-repeat;
+  // -webkit-background-size:cover;
+  // -moz-background-size:cover;
+  // -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+    text-align:center;
+
+  h1{
+    @include typing;
+    color:white;
+  }
+}
+
+.down-btn{
+  position:absolute;
+  bottom:40px;
+  width:100%;
+  text-align:center;
+  i{
+    color:white
+  }
+}
+
+
+.content{
+  min-height:300px;
+}
+
+.fixed-attachment{
+  background-attachment:fixed;
+}
+
 .container{
   width:100%;
 }
 
-@mixin carContainer{
-  top:100px;
-  width:1000px;
-}
+
+
 
 .showcars{
   position:relative;
