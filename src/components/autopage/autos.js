@@ -64,7 +64,7 @@ class Autos extends Component{
     const { width } = this.state;
     const isMobile = width < 770;
     return(
-      <div>
+      <div className="container">
         <NavBar />
         {this.handleComponentChange(isMobile)}
       </div>

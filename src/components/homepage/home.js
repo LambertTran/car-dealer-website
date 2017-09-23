@@ -4,7 +4,6 @@ import React,{Component} from 'react';
 import NavBar from '../share/navbar';
 import HomePageBody from './home-page-body';
 
-
 class Home extends Component{
   render(){
     return(

@@ -1,27 +1,73 @@
-nav {
-  position: absolute;
-  z-index: 5; }
+/** Color **/
+/** Properties **/
+/** Style **/
+.bg-dark {
+  background-color: #CC0000 !important; }
 
 .home {
   height: 100vh;
   width: 100vw;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   text-align: center; }
-  .home h1 {
-    display: inline-block;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    -webkit-animation: type 5s steps(50, end) alternate;
-    animation: type 5s steps(50, end) alternate;
+
+.typing {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  text-align: center; }
+  .typing h1 {
     color: white; }
-@keyframes type {
-  from {
-    width: 0; } }
-@-webkit-keyframes type {
-  from {
-    width: 0; } }
+    @media screen and (min-width: 767px) {
+      .typing h1 {
+        font-size: 50px; } }
+
+.home-btn {
+  width: 150px;
+  height: 50px;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 50px;
+  border: 2px solid #fff;
+  transition: all 0.5s;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #CC0000; }
+  .home-btn a {
+    color: white; }
+    .home-btn a:hover {
+      text-decoration: none; }
+  .home-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s; }
+    .home-btn span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s; }
+  .home-btn:hover {
+    background-color: #6600CC; }
+    .home-btn:hover span {
+      padding-right: 25px; }
+      .home-btn:hover span:after {
+        opacity: 1;
+        right: 0; }
+  @media screen and (min-width: 767px) {
+    .home-btn {
+      font-size: 30px;
+      width: 300px;
+      height: 70px;
+      line-height: 70px; } }
+
 .down-btn {
   position: absolute;
   bottom: 40px;
@@ -30,8 +76,27 @@ nav {
   .down-btn i {
     color: white; }
 
-.content {
-  min-height: 300px; }
+#section2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #333333;
+  min-height: 300px;
+  text-align: center; }
+  #section2 h1 {
+    width: 100%;
+    color: white;
+    text-align: center; }
+
+.icon-container {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  .icon-container img {
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    margin-bottom: 10px; }
+  .icon-container h3 {
+    color: white; }
 
 .fixed-attachment {
   background-attachment: fixed; }

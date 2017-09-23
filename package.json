@@ -13,7 +13,8 @@
     "react-scroll": "^1.5.4",
     "redux": "^3.7.2",
     "redux-form": "^7.0.4",
-    "redux-promise": "^0.5.3"
+    "redux-promise": "^0.5.3",
+    "typed.js": "^2.0.5"
   },
   "scripts": {
     "start": "react-scripts start",
