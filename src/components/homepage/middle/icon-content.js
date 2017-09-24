@@ -1,9 +1,9 @@
 import React,{Component} from 'react';
 
 /** Images **/
-import car from '../../images/car-content.png';
-import phone from '../../images/phone.png';
-import drive from '../../images/drive.png';
+import car from '../../../images/car-content.png';
+import phone from '../../../images/phone.png';
+import drive from '../../../images/drive.png';
 
 export default class IconContent extends Component{
   render(){
@@ -20,7 +20,7 @@ export default class IconContent extends Component{
         </div>
         <div className="col-12 col-md-4 icon-container">
           <img src={drive} className="img-icon"/>
-          <h3>Drive the car you love home</h3>  
+          <h3>Test drive and drive it home</h3>  
         </div>
       </section>
     )

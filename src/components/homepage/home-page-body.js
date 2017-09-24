@@ -1,12 +1,10 @@
 import React,{Component} from 'react';
 import {scroller} from 'react-scroll';
 
-/** Images **/
-import stickshift from '../../images/stickshift3.jpg';
-
 /** Components **/
-import MainHomePage from './main-homepage';
-import IconContent from './icon-content';
+import MainHomePage from './top/main-homepage';
+import IconContent from './middle/icon-content';
+import DealerDetail from './bottom/dealer-detail';
 
 class HomePageBody extends Component{
  
@@ -20,20 +18,12 @@ class HomePageBody extends Component{
   }
   
   render(){
-    var bgImg2 = {
-      backgroundImage: `url(${stickshift})`
-    }
+    
     return(
-      <div className="container-fluid">
+      <div>
         <MainHomePage handleScroll={this.handleScroll} />
         <IconContent />
-        <section className="row">
-          <div className="home fixed-attachment" style={bgImg2}>
-          </div>
-        </section>
-        <div className="row">
-          <div className="content"></div>
-        </div>
+        <DealerDetail />
       </div>
     )
   }

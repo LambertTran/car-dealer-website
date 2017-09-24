@@ -1,8 +1,8 @@
 import React,{Component} from 'react';
 import ReactModal from 'react-modal';
 
-import ShowCars from './show-cars';
-import ShowCarDetail from './show-car-detail';
+import ShowCars from '../share/show-cars';
+import ShowCarDetail from '../share/show-car-detail';
 
 
 class MobileView extends Component{

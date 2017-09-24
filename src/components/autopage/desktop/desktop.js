@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
-import ShowCars from './show-cars';
-import ShowCarDetail from './show-car-detail';
+import ShowCars from '../share/show-cars';
+import ShowCarDetail from '../share/show-car-detail';
 
 class ComputerView extends Component{
   render(){

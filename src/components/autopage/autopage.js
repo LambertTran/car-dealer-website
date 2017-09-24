@@ -8,8 +8,8 @@ import NavBar from '../share/navbar';
 import {fetchAllCars} from '../../actions';
 
 
-import ComputerView from './computer';
-import MobileView from './mobile';
+import ComputerView from './desktop/desktop';
+import MobileView from './mobile/mobile';
 
 class Autos extends Component{
 
@@ -30,7 +30,7 @@ class Autos extends Component{
     window.removeEventListener('resize', this.handleWindowSizeChange);
   }
 
-  handleWindowSizeChange = () => {
+  handleWindowSizeChange(){
     this.setState({ width: window.innerWidth });
   };
   

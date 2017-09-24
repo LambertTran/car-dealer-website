@@ -4,7 +4,7 @@ import HomeTyping from './home-typing';
 import ViewAutos from './view-autos';
 
 /** Image **/
-import blackRed from '../../images/black-red-internal.jpg';
+import blackRed from '../../../images/black-red-internal.jpg';
 
 class MainHomePage extends Component{
   render(){
@@ -14,7 +14,7 @@ class MainHomePage extends Component{
 
     return(
       <section className="row">
-        <div className="home" style={bgImg}>
+        <div className="home fixed-attachment" style={bgImg}>
           <HomeTyping strings={["QUALITY.","VALUE.","SATISFACTION."]} />
           <ViewAutos />
           <div className="down-btn">

@@ -4,8 +4,8 @@ import {Provider} from 'react-redux';
 import {BrowserRouter,Route,Switch} from 'react-router-dom';
 
 /** import components **/
-import Home from './components/homepage/home';
-import Autos from './components/autopage/autos';
+import Home from './components/homepage/homepage';
+import Autos from './components/autopage/autopage';
 
 /** create store **/
 import { createStore, applyMiddleware } from 'redux';

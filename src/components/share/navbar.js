@@ -11,13 +11,37 @@ export default function NavBar(){
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <NavLink to='/' className="nav-link"> Home </NavLink>
+            <NavLink 
+              to='/' exact 
+              activeStyle={{
+                fontWeight: 'bold',
+                color: 'white'
+              }}
+              className="nav-link"
+              > Home 
+            </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to='/autos' className="nav-link"> Autos </NavLink>
+            <NavLink 
+              to='/autos' exact 
+              activeStyle={{
+                fontWeight: 'bold',
+                color: 'white'
+              }} 
+              className="nav-link"
+              > Autos 
+            </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to='/#' className="nav-link"> About </NavLink>
+            <NavLink 
+              to='/about' exact 
+              activeStyle={{
+                fontWeight: 'bold',
+                color: 'white'
+              }}
+              className="nav-link"
+              > About 
+            </NavLink>
           </li>
         </ul>
       </div>
