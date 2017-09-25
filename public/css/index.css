@@ -14,7 +14,7 @@ nav a {
 
 .home {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -160,7 +160,8 @@ footer {
   background-color: #333333;
   text-align: center; }
   footer p {
-    color: #cccccc; }
+    color: #cccccc;
+    margin-bottom: 3px; }
 
 /*** autos **/
 .showcars {
