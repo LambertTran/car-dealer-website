@@ -36,8 +36,8 @@ export default class DealerDetail extends Component{
               </div>
             </div>
           </div>
+          <Footer />
         </div>
-        <Footer />
       </section>
     )
   }
