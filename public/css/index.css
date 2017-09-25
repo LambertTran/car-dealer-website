@@ -120,9 +120,7 @@ nav a {
   background-color: rgba(204, 0, 0, 0.6);
   color: white;
   margin: 10px 0;
-  min-height: 200px;
-  border-style: solid;
-  padding: 15px; }
+  border-style: solid; }
   .dealer-detail ul, .time ul {
     list-style: none; }
     .dealer-detail ul li, .time ul li {
