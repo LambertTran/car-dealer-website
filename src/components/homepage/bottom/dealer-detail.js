@@ -33,14 +33,11 @@ export default class DealerDetail extends Component{
                   <li>Sat:  10:00AM - 6:30PM</li>
                   <li>Sun:  10:00AM - 6:30PM</li>
                 </ul>
+              </div>
             </div>
           </div>
-          </div>
-            <Footer />
         </div>
-
-            
-
+        <Footer />
       </section>
     )
   }
