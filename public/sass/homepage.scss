@@ -1,12 +1,4 @@
-/** Color **/
-$nav-bar-bg:#CC0000;
-$typing-color: white;
-$view-autos-bg: #CC0000;
-$view-autos-hover: #6600CC;
-$icon-content-bg: #333333;
-$dealer-detail: rgba(204,0,0,0.6);
-$footer-bg : #333333;
-$footer-text: #cccccc;
+
 /** Properties **/
 // @mixin typing{
 //   display: inline-block;
@@ -43,10 +35,7 @@ $footer-text: #cccccc;
   transition:all 0.5s;
 }
 
-@mixin carContainer{
-  top:100px;
-  width:1000px;
-}
+
 
 
 

@@ -1,9 +1,19 @@
 import React,{Component} from 'react';
-import ReactModal from 'react-modal';
+import Modal from 'react-modal';
 
 import ShowCars from '../share/show-cars';
 import ShowCarDetail from '../share/show-car-detail';
 
+const customStyles={
+  content:{
+    top                   : '55%',
+    left                  : '50%',
+    right                 : 'auto',
+    bottom                : 'auto',
+    marginRight           : '-50%',
+    transform             : 'translate(-50%, -50%)'
+  }
+}
 
 class MobileView extends Component{
   constructor (props) {
@@ -26,29 +36,28 @@ class MobileView extends Component{
 
   render(){
     return(
-      <div>
-        <div className="container">
+        <div className="container-fluid">
           <div className="row">
-            <div className="col showcars">
+            <div className="col-12 showcars">
               <ShowCars 
                 cars={this.props.cars} 
                 selectedCar={this.props.handleSelectedCar}
                 handleOpenModal={this.handleOpenModal} 
               />
-              <ReactModal 
+              <Modal 
                 isOpen={this.state.showModal}
-                contentLabel="Minimal Modal Example"
-              >
+                style={customStyles}
+                contentLabel="Car Description"
+                >
                 <button 
                   className="btn btn-primary float-right" 
                   onClick={this.handleCloseModal}
                 >Close</button>
                 <ShowCarDetail selectedCar={this.props.selectedCar} />
-              </ReactModal>
+              </Modal>
             </div>  
           </div>
         </div>
-      </div>
     )
   }
 }

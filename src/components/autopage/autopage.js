@@ -23,16 +23,16 @@ class Autos extends Component{
   /** handle screen change **/
   componentWillMount() {
     this.props.fetchAllCars();
-    window.addEventListener('resize', this.handleWindowSizeChange);
+    // window.addEventListener('resize', this.handleWindowSizeChange);
   }
 
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.handleWindowSizeChange);
-  }
+  // componentWillUnmount() {
+  //   window.removeEventListener('resize', this.handleWindowSizeChange);
+  // }
 
-  handleWindowSizeChange(){
-    this.setState({ width: window.innerWidth });
-  };
+  // handleWindowSizeChange(){
+  //   this.setState({ width: window.innerWidth });
+  // };
   
   /** change selected car **/
   handleSelectedCar(car){
@@ -41,32 +41,36 @@ class Autos extends Component{
   }
   
   /** display different components base on screen size **/
-  handleComponentChange(isMobile){
-    if(isMobile){
-      return(
-        <MobileView
-          cars = {this.props.cars} 
-          handleSelectedCar= {this.handleSelectedCar} 
-          selectedCar={this.state.selectedCar}
-        />
-      )
-    }
-    return(
-      <ComputerView 
-        cars = {this.props.cars} 
-        handleSelectedCar= {this.handleSelectedCar} 
-        selectedCar={this.state.selectedCar}
-      />
-    )
-  }
+  // handleComponentChange(isMobile){
+  //   if(isMobile){
+  //     return(
+  //       <MobileView
+  //         cars = {this.props.cars} 
+  //         handleSelectedCar= {this.handleSelectedCar} 
+  //         selectedCar={this.state.selectedCar}
+  //       />
+  //     )
+  //   }
+  //   return(
+  //     <ComputerView 
+  //       cars = {this.props.cars} 
+  //       handleSelectedCar= {this.handleSelectedCar} 
+  //       selectedCar={this.state.selectedCar}
+  //     />
+  //   )
+  // }
 
   render(){
     const { width } = this.state;
     const isMobile = width < 770;
     return(
-      <div className="container">
+      <div className="container-fluid autos-bg">
         <NavBar />
-        {this.handleComponentChange(isMobile)}
+        <MobileView 
+          cars = {this.props.cars} 
+          handleSelectedCar= {this.handleSelectedCar} 
+          selectedCar={this.state.selectedCar}
+        />
       </div>
     )
   }  

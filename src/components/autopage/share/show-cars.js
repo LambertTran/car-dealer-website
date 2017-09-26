@@ -17,6 +17,7 @@ class ShowCars extends Component{
           alt="something" 
           className="img-thumbnail"
         />
+        <h4>{car.name}</h4>
       </div>
     )
   }

@@ -1,4 +1,7 @@
 /** Color **/
+html, body {
+  height: 100%; }
+
 /** Properties **/
 /** Style **/
 nav a {
@@ -162,23 +165,33 @@ footer {
     margin-bottom: 3px; }
 
 /*** autos **/
+.autos-bg {
+  background-color: #333333;
+  display: block;
+  position: relative;
+  min-height: 100% !important;
+  overflow: hidden; }
+
 .showcars {
   position: relative;
-  top: 100px;
-  width: 1000px;
+  top: 80px;
+  width: 100%; }
+
+.car-item {
+  width: 100%;
+  height: 100%;
+  border: 5px solid #CC0000;
   background-color: white;
-  overflow: auto;
-  max-height: 80vh; }
-  @media screen and (max-width: 750px) {
-    .showcars {
-      max-height: 100%;
-      overflow: none; } }
+  margin-bottom: 15px; }
+  .car-item h4 {
+    color: black;
+    padding: 15px; }
 
 .showdetails {
   position: relative;
   text-align: center;
-  top: 100px;
-  width: 1000px;
+  top: 80px;
+  width: 100%;
   overflow: auto;
   max-height: 600px; }
 
