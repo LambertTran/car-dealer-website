@@ -165,14 +165,15 @@ footer {
     margin-bottom: 3px; }
 
 /*** autos **/
-.autos-bg {
+/*** mobile view **/
+.mobile-view {
   background-color: #333333;
   display: block;
   position: relative;
   min-height: 100% !important;
   overflow: hidden; }
 
-.showcars {
+.cars-container {
   position: relative;
   top: 80px;
   width: 100%; }
@@ -187,12 +188,35 @@ footer {
     color: black;
     padding: 15px; }
 
-.showdetails {
-  position: relative;
-  text-align: center;
+/** Desktop View **/
+.desktop-view {
+  background-color: #333333;
+  height: 100vh;
+  width: 100vw; }
+
+.box {
   top: 80px;
+  position: relative;
   width: 100%;
+  height: 80%;
+  overflow: hidden; }
+
+.car-list {
+  width: 30%;
+  float: left;
+  height: 100%;
+  display: block;
   overflow: auto;
-  max-height: 600px; }
+  margin: 20px; }
+
+.showdtails {
+  height: 100%;
+  display: block;
+  overflow: auto;
+  margin: 20px;
+  width: 60%;
+  float: right;
+  text-align: center;
+  color: white; }
 
 /*# sourceMappingURL=index.css.map */

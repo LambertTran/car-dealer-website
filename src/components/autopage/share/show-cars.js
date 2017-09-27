@@ -11,7 +11,11 @@ class ShowCars extends Component{
 
   renderCars(car){
     return(
-      <div onClick={() => this.handleOnClick(car)} key={car._id} className="car-item">
+      <div 
+        onClick={() => this.handleOnClick(car)} 
+        key={car._id} 
+        className="car-item"
+      >
         <img 
           src={car.paths[0]} 
           alt="something" 

@@ -38,7 +38,7 @@ class MobileView extends Component{
     return(
         <div className="container-fluid">
           <div className="row">
-            <div className="col-12 showcars">
+            <div className="col-12 cars-container">
               <ShowCars 
                 cars={this.props.cars} 
                 selectedCar={this.props.handleSelectedCar}

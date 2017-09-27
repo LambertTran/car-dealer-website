@@ -8,7 +8,7 @@ import NavBar from '../share/navbar';
 import {fetchAllCars} from '../../actions';
 
 
-import ComputerView from './desktop/desktop';
+import DesktopView from './desktop/desktop';
 import MobileView from './mobile/mobile';
 
 class Autos extends Component{
@@ -18,59 +18,61 @@ class Autos extends Component{
     this.state={selectedCar:{},
                 width:window.innerWidth};
     this.handleSelectedCar = this.handleSelectedCar.bind(this);
+    this.handleWindowSizeChange= this.handleWindowSizeChange.bind(this);
   }
   
   /** handle screen change **/
   componentWillMount() {
     this.props.fetchAllCars();
-    // window.addEventListener('resize', this.handleWindowSizeChange);
+    window.addEventListener('resize', this.handleWindowSizeChange);
   }
 
-  // componentWillUnmount() {
-  //   window.removeEventListener('resize', this.handleWindowSizeChange);
-  // }
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleWindowSizeChange);
+  }
 
-  // handleWindowSizeChange(){
-  //   this.setState({ width: window.innerWidth });
-  // };
+  handleWindowSizeChange(){
+    this.setState({ width: window.innerWidth });
+  };
   
   /** change selected car **/
   handleSelectedCar(car){
-    console.log(car)
     this.setState({selectedCar:car});
   }
   
   /** display different components base on screen size **/
-  // handleComponentChange(isMobile){
-  //   if(isMobile){
-  //     return(
-  //       <MobileView
-  //         cars = {this.props.cars} 
-  //         handleSelectedCar= {this.handleSelectedCar} 
-  //         selectedCar={this.state.selectedCar}
-  //       />
-  //     )
-  //   }
-  //   return(
-  //     <ComputerView 
-  //       cars = {this.props.cars} 
-  //       handleSelectedCar= {this.handleSelectedCar} 
-  //       selectedCar={this.state.selectedCar}
-  //     />
-  //   )
-  // }
-
-  render(){
-    const { width } = this.state;
-    const isMobile = width < 770;
+  handleComponentChange(isMobile){
+    if(isMobile){
+      return(
+        <div className="container-fluid mobile-view">
+          <NavBar /> 
+          <MobileView 
+            cars = {this.props.cars} 
+            handleSelectedCar= {this.handleSelectedCar} 
+            selectedCar={this.state.selectedCar}
+          />
+        </div>
+      )
+    }
     return(
-      <div className="container-fluid autos-bg">
+      <div className="container-fluid desktop-view">
         <NavBar />
-        <MobileView 
+        <DesktopView 
           cars = {this.props.cars} 
           handleSelectedCar= {this.handleSelectedCar} 
           selectedCar={this.state.selectedCar}
         />
+      </div>
+    )
+  }
+
+  render(){
+    const { width } = this.state;
+    const isMobile = width < 770;
+    
+    return (
+      <div>
+        {this.handleComponentChange(isMobile)}
       </div>
     )
   }  

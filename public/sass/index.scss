@@ -26,8 +26,8 @@ html,body{
   width:100%;
 }
 
-
-.autos-bg{
+/*** mobile view **/
+.mobile-view{
   background-color: $auto-bg;
   display:block;
   position:relative;
@@ -35,18 +35,9 @@ html,body{
   overflow:hidden;
 }
 
-
-
-.showcars{
+.cars-container{
   position:relative;
   @include carContainer;
-  // overflow: auto; 
-  // max-height:80vh;
-
-  // @media screen and (max-width:750px){
-  //   max-height:100%;
-  //   overflow:none;
-  // }
 }
 
 .car-item{
@@ -61,10 +52,37 @@ html,body{
   }
 }
 
-.showdetails{
-    position:relative;
-    text-align:center;
-    @include carContainer;
-    overflow:auto;
-    max-height:600px;
+
+
+
+/** Desktop View **/
+@mixin overflow-props{
+  height:100%;
+  display:block;
+  overflow:auto;
+  margin: 20px;
+}
+.desktop-view{
+  background-color: $auto-bg;
+  height:100vh;
+  width:100vw;
+}
+.box{
+  top:80px;
+  position:relative;
+  width:100%;
+  height:80%;
+  overflow:hidden;
+}
+.car-list{
+  width:30%;
+  float:left;
+  @include overflow-props;
+}
+.showdtails{
+  @include overflow-props;
+  width:60%;
+  float:right;
+  text-align:center;
+  color:white;
 }
