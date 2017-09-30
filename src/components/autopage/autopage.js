@@ -37,6 +37,7 @@ class Autos extends Component{
   
   /** change selected car **/
   handleSelectedCar(car){
+    console.log(car)
     this.setState({selectedCar:car});
   }
   
