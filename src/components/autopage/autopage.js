@@ -3,13 +3,13 @@ import { connect } from 'react-redux';
 
 /** import components **/
 import NavBar from '../share/navbar';
+import DesktopView from './desktop/desktop';
+import MobileView from './mobile/mobile';
 
 /** import action helpers **/
 import {fetchAllCars} from '../../actions';
 
 
-import DesktopView from './desktop/desktop';
-import MobileView from './mobile/mobile';
 
 class Autos extends Component{
 

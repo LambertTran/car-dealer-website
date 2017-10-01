@@ -6,6 +6,7 @@ import {BrowserRouter,Route,Switch} from 'react-router-dom';
 /** import components **/
 import Home from './components/homepage/homepage';
 import Autos from './components/autopage/autopage';
+import About from './components/aboutpage/aboutpage';
 
 /** create store **/
 import { createStore, applyMiddleware } from 'redux';
@@ -19,6 +20,7 @@ ReactDOM.render(
       <div>
         <Switch>
           <Route path='/autos' component={Autos} />
+          <Route path='/about' component={About} />
           <Route path='/' component={Home} />
         </Switch>
       </div>

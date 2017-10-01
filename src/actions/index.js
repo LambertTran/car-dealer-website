@@ -11,6 +11,10 @@ export function fetchAllCars(callback){
   }
 }
 
+export function sendEmail(data){
+  console.log(data);
+}
+
 
 /*export function UploadCar(data){
   console.log(data)
