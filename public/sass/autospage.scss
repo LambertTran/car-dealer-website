@@ -1,0 +1,70 @@
+/*** autos **/
+@mixin carContainer{
+  padding-top:80px;
+  width:100%;
+}
+
+/*** mobile view **/
+.mobile-view{
+  background-color: $auto-bg;
+  display:block;
+  position:relative;
+  min-height:100% !important;
+  overflow:hidden;
+
+}
+
+.cars-container{
+  position:relative;
+  height:100%;
+  @include carContainer;
+  overflow: auto;
+}
+
+.car-item{
+  width: 100%;
+  height: 100%;
+  border: 5px solid $car-item-border;
+  background-color:white;
+  margin-bottom: 15px;
+  h4{
+    color:black;
+    padding: 15px;
+  }
+}
+
+
+
+
+/** Desktop View **/
+@mixin overflow-props{
+  height:100%;
+  display:block;
+  overflow:auto;
+  margin: 20px;
+}
+.desktop-view{
+  background-color: $auto-bg;
+  height:100vh;
+  width:100vw;
+}
+.box{
+  top:80px;
+  position:relative;
+  width:100%;
+  height:80%;
+  overflow:hidden;
+}
+.car-list{
+  width:30%;
+  float:left;
+  @include overflow-props;
+}
+.showdtails{
+  @include overflow-props;
+  width:60%;
+  float:right;
+  text-align:center;
+  color:white;
+}
+

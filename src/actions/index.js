@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-const URL ='https://server-car-web.herokuapp.com/api/cars' 
+const URL ='https://server-car-web.herokuapp.com/api' 
 
 export function fetchAllCars(callback){
-  const req = axios.get(`${URL}`)
+  const req = axios.get(`${URL}/cars`)
 
   return {
     type:'FETCH-ALL',
@@ -12,7 +12,8 @@ export function fetchAllCars(callback){
 }
 
 export function sendEmail(data){
-  console.log(data);
+  const req = axios.post(`${URL}/sendemail`,data);
+  return;
 }
 
 

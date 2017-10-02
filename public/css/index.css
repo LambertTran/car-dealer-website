@@ -221,11 +221,49 @@ footer {
   text-align: center;
   color: white; }
 
+.aboutpage {
+  height: 100%;
+  width: 100%;
+  display: block;
+  background-color: #333333; }
+  @media screen and (min-width: 767px) {
+    .aboutpage {
+      height: 100vh; } }
+
+.about-header {
+  padding-top: 80px;
+  text-align: center; }
+  .about-header h1 {
+    color: white; }
+  .about-header hr {
+    border-top: 2px solid white;
+    margin-bottom: 50px; }
+    @media screen and (min-width: 767px) {
+      .about-header hr {
+        margin-bottom: 100px; } }
+
+.contact-info {
+  margin-bottom: 50px; }
+  .contact-info div {
+    padding-left: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 100%; }
+    .contact-info div i {
+      float: left;
+      color: white; }
+    .contact-info div p {
+      float: left;
+      margin-left: 15px;
+      color: white; }
+
 .contact-form {
-  top: 100px;
-  left: 50%;
-  position: relative;
-  height: 600px;
-  width: 400px; }
+  text-align: center; }
+  .contact-form button {
+    margin: 0 auto;
+    background-color: #CC0000;
+    border-color: #CC0000; }
+  .contact-form textarea {
+    height: 200px; }
 
 /*# sourceMappingURL=index.css.map */

@@ -21,14 +21,13 @@ export default class ContactForm extends Component{
   handleSubmit(event){
     event.preventDefault();
     sendEmail(this.state);
-    document.getElementById('form').reset();
+    this.setState({name:"",email:"",message:""})
   }
 
   render(){
     return(
-      <form onSubmit={this.handleSubmit} className="contact-form" id="form">
+      <form onSubmit={this.handleSubmit} className="contact-form" id="formID">
         <div className="form-group">
-          <label>Name</label>
           <input
             name="name" 
             value={this.state.name} 
@@ -39,7 +38,6 @@ export default class ContactForm extends Component{
           />
         </div>
         <div className="form-group">
-          <label>Email</label>
           <input 
             name="email"
             value={this.state.email} 
@@ -50,7 +48,6 @@ export default class ContactForm extends Component{
           />
         </div>
         <div className="form-group">
-          <label>Message</label>
           <textarea 
             name="message" 
             value={this.state.message}
@@ -61,7 +58,7 @@ export default class ContactForm extends Component{
           />
         </div>
         <div>
-          <input type="submit" className="btn btn-primary"/>
+          <button type="submit" className="btn btn-primary"> Contact me </button>
         </div>
       </form>
     )
