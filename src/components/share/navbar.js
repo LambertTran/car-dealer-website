@@ -1,10 +1,15 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
 
+import logo from '../../images/logo.jpg';
+
 export default function NavBar(){
   return(
     <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-      <a className="navbar-brand" href="#"> Brand  </a>
+      <a className="navbar-brand" href="#">
+        <img className="float-left" src={logo} alt="" width="70" height="70" />
+        <h4 className="float-left"> Auto 27 </h4>
+      </a>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>

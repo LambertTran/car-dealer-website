@@ -2,6 +2,9 @@
 html, body {
   height: 100%; }
 
+.container-fluid {
+  min-height: 100%; }
+
 /** Properties **/
 /** Style **/
 nav a {
@@ -11,6 +14,23 @@ nav a {
   @media screen and (min-width: 1024px) {
     nav a {
       font-size: 25px; } }
+
+.navbar {
+  padding: 0; }
+
+.navbar-brand {
+  margin: 0;
+  padding: 0;
+  display: block; }
+  .navbar-brand img {
+    margin-right: 10px; }
+  .navbar-brand h4 {
+    line-height: 70px;
+    vertical-align: middle;
+    margin-bottom: 0; }
+
+.navbar-collapse {
+  flex-basis: 80%; }
 
 .bg-dark {
   background-color: #CC0000 !important; }
@@ -155,11 +175,13 @@ nav a {
         font-size: 1.5rem; } }
 
 footer {
-  position: absolute;
+  position: relative;
   width: 100%;
   bottom: 0;
   background-color: #333333;
-  text-align: center; }
+  text-align: center;
+  border-style: solid;
+  border-top: 1px double white; }
   footer p {
     color: #cccccc;
     margin-bottom: 3px; }
@@ -258,7 +280,8 @@ footer {
       color: white; }
 
 .contact-form {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 60px; }
   .contact-form button {
     margin: 0 auto;
     background-color: #CC0000;

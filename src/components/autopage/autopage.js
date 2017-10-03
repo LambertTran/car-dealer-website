@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import NavBar from '../share/navbar';
 import DesktopView from './desktop/desktop';
 import MobileView from './mobile/mobile';
+import Footer from '../share/footer'; 
 
 /** import action helpers **/
 import {fetchAllCars} from '../../actions';
@@ -52,6 +53,7 @@ class Autos extends Component{
             handleSelectedCar= {this.handleSelectedCar} 
             selectedCar={this.state.selectedCar}
           />
+          <Footer />
         </div>
       )
     }
@@ -63,6 +65,7 @@ class Autos extends Component{
           handleSelectedCar= {this.handleSelectedCar} 
           selectedCar={this.state.selectedCar}
         />
+        <Footer style="absolute" />
       </div>
     )
   }

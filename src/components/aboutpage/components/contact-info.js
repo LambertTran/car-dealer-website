@@ -15,7 +15,7 @@ export default class ContactInfo extends Component{
         </div>
         <div>
           <i className="fa fa-phone fa-2x" aria-hidden="true"></i>
-          <p>408-603-1667</p>
+          <p>(916) 993 - 0999</p>
         </div>
       </div>
     );

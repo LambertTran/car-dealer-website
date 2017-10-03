@@ -4,11 +4,12 @@ import React,{Component} from 'react';
 import NavBar from '../share/navbar';
 import ContactForm from './components/contact-form';
 import ContactInfo from './components/contact-info';
+import Footer from '../share/footer'; 
 
 export default class About extends Component{
   render(){
     return(
-      <div className="aboutpage">
+      <div className="container-fluid aboutpage">
         <NavBar />
         <div className="about-header">
           <h1>Contact</h1><hr/>
@@ -23,6 +24,7 @@ export default class About extends Component{
             </div>
           </div>
         </div>
+        <Footer style="absolute" />
       </div>
     )
   }

@@ -19,6 +19,9 @@ $about-bg : #333333;
 html,body{
   height:100%;
 }
+.container-fluid{
+  min-height: 100%;
+}
 
 @import 'homepage';
 @import 'autospage';
@@ -69,6 +72,7 @@ html,body{
 
 .contact-form{
   text-align: center;
+  margin-bottom: 60px;
   button{
     margin: 0 auto;
     background-color:$nav-bar-bg;

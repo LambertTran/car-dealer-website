@@ -36,9 +36,6 @@
 }
 
 
-
-
-
 /** Style **/
 nav{
   a{
@@ -50,6 +47,27 @@ nav{
     }
   }
 }
+.navbar{
+  padding:0;
+}
+.navbar-brand{
+  margin: 0;
+  padding: 0;
+  display:block;
+  img{
+    margin-right:10px;
+  }
+  h4{
+    line-height: 70px;
+    vertical-align: middle;
+    margin-bottom:0;
+  }
+}
+.navbar-collapse{
+  flex-basis: 80%;
+}
+
+
 
 .bg-dark{
   background-color: $nav-bar-bg!important;
@@ -217,13 +235,18 @@ nav{
 }
 
 footer{
-  position:absolute;
+  position:relative;
   width:100%;
   bottom:0;
   background-color:$footer-bg;
   text-align:center;
+  border-style:solid;
+  border-top: 1px double white;
   p{
     color:$footer-text;
     margin-bottom:3px;
-  } 
+  }
+  // @media screen and (min-width:767px){
+  //   position:absolute;
+  // }
 }
