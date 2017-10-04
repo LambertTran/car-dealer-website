@@ -27,9 +27,15 @@
   border: 5px solid $car-item-border;
   background-color:white;
   margin-bottom: 15px;
-  h4{
+  h5{
     color:black;
     padding: 15px;
+    
+    em{
+      border-style: groove;
+      background-color: #BFC9CA;
+      padding: 5px;
+    }
   }
 }
 
@@ -67,4 +73,13 @@
   text-align:center;
   color:white;
 }
-
+.table{
+  margin-top: 30px;
+  background-color:#909497;
+  th{
+    text-align: center;
+  }
+}
+.description{
+  white-space: pre;
+}

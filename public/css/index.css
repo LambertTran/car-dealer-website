@@ -208,9 +208,13 @@ footer {
   border: 5px solid #CC0000;
   background-color: white;
   margin-bottom: 15px; }
-  .car-item h4 {
+  .car-item h5 {
     color: black;
     padding: 15px; }
+    .car-item h5 em {
+      border-style: groove;
+      background-color: #BFC9CA;
+      padding: 5px; }
 
 /** Desktop View **/
 .desktop-view {
@@ -242,6 +246,15 @@ footer {
   float: right;
   text-align: center;
   color: white; }
+
+.table {
+  margin-top: 30px;
+  background-color: #909497; }
+  .table th {
+    text-align: center; }
+
+.description {
+  white-space: pre; }
 
 .aboutpage {
   height: 100%;

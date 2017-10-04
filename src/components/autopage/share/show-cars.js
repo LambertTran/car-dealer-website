@@ -21,7 +21,7 @@ class ShowCars extends Component{
           alt="something" 
           className="img-thumbnail"
         />
-        <h4>{car.name} - ${car.price} ({car.year})</h4>
+        <h5>{car.year} {car.name} - <em>${car.price}</em></h5>
       </div>
     )
   }

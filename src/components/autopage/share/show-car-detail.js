@@ -12,7 +12,7 @@ class ShowCarDetail extends Component{
     } 
     return(
       <div>
-        <h1>{selectedCar.name} - {selectedCar.year}</h1>
+        <h1>{selectedCar.year}  {selectedCar.name} - ${selectedCar.price}</h1>
         <SlideShowImages images = {selectedCar.paths} />
         <div>
           <table className="table table-striped">
@@ -34,7 +34,7 @@ class ShowCarDetail extends Component{
         </div>
         <div className="float-left">
           <h3>Description:</h3>
-          <p>{selectedCar.description}</p>
+          <p className="description">{selectedCar.description}</p>
         </div>
       </div>
     )
