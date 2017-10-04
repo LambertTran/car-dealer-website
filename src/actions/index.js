@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const URL ='https://server-car-web.herokuapp.com/api' 
+const URL ='http://ec2-13-57-125-176.us-west-1.compute.amazonaws.com:8080/api' 
 
 export function fetchAllCars(callback){
   const req = axios.get(`${URL}/cars`)

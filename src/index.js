@@ -21,6 +21,9 @@ ReactDOM.render(
         <Switch>
           <Route path='/autos' component={Autos} />
           <Route path='/about' component={About} />
+          <Route path='/login' component={() => 
+            window.location = 'http://ec2-13-57-125-176.us-west-1.compute.amazonaws.com:8080/'
+          }/>
           <Route path='/' component={Home} />
         </Switch>
       </div>
