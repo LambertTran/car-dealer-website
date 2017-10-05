@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const URL ='http://ec2-13-57-125-176.us-west-1.compute.amazonaws.com:8080/api' 
+const URL ='//login.auto27.us/api' 
 
 export function fetchAllCars(callback){
   const req = axios.get(`${URL}/cars`)
