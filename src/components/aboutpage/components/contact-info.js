@@ -6,12 +6,12 @@ export default class ContactInfo extends Component{
       <div className="contact-info">
         <div>
           <i className="fa fa-map-marker fa-2x" aria-hidden="true"></i>
-          <p>Shields Ave, Davis, CA 95616</p>
+          <p>8732 Fruitridge Rd #5, Sacramento, CA 95828</p>
         </div>
 
         <div>
           <i className="fa fa-envelope fa-2x" aria-hidden="true"></i>
-          <p>lb.tran648@gmail.com</p>
+          <p>auto27sacramento@gmail.com</p>
         </div>
         <div>
           <i className="fa fa-phone fa-2x" aria-hidden="true"></i>
