@@ -27,13 +27,17 @@ nav a {
   .navbar-brand h4 {
     line-height: 70px;
     vertical-align: middle;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    color: black; }
 
 .navbar-collapse {
   flex-basis: 80%; }
 
+.nav-item a {
+  color: black !important; }
+
 .bg-dark {
-  background-color: #CC0000 !important; }
+  background-color: white !important; }
 
 .home {
   height: 100vh;
@@ -49,7 +53,7 @@ nav a {
   top: 30%;
   text-align: center; }
   .typing h1 {
-    color: white; }
+    color: black; }
     @media screen and (min-width: 767px) {
       .typing h1 {
         font-size: 50px; } }
@@ -86,7 +90,7 @@ nav a {
       right: -20px;
       transition: 0.5s; }
   .home-btn:hover {
-    background-color: #6600CC; }
+    background-color: black; }
     .home-btn:hover span {
       padding-right: 25px; }
       .home-btn:hover span:after {
@@ -297,8 +301,8 @@ footer {
   margin-bottom: 60px; }
   .contact-form button {
     margin: 0 auto;
-    background-color: #CC0000;
-    border-color: #CC0000; }
+    background-color: white;
+    border-color: white; }
   .contact-form textarea {
     height: 200px; }
 

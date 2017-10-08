@@ -61,13 +61,17 @@ nav{
     line-height: 70px;
     vertical-align: middle;
     margin-bottom:0;
+    color:black;
   }
 }
 .navbar-collapse{
   flex-basis: 80%;
 }
-
-
+.nav-item{
+  a{
+    color:black !important;
+  }
+}
 
 .bg-dark{
   background-color: $nav-bar-bg!important;

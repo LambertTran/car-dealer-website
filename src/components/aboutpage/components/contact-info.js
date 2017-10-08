@@ -6,7 +6,7 @@ export default class ContactInfo extends Component{
       <div className="contact-info">
         <div>
           <i className="fa fa-map-marker fa-2x" aria-hidden="true"></i>
-          <p>8732 Fruitridge Rd #5, Sacramento, CA 95828</p>
+          <p>8732 Fruitridge Rd #5, Sacramento, CA 95826</p>
         </div>
 
         <div>

@@ -5,7 +5,7 @@ export default function ViewAutos(){
   return (
     <div className="home-btn">
       <Link to="/autos">
-        <span>View Autos</span>
+        <span>Quality Pre-owned</span>
       </Link>      
     </div>
 
