@@ -39,6 +39,17 @@ export default function NavBar(){
           </li>
           <li className="nav-item">
             <NavLink 
+              to='/customer' exact 
+              activeStyle={{
+                fontWeight: 'bold',
+                color: 'black'
+              }}
+              className="nav-link"
+              > Happy Customers 
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink 
               to='/about' exact 
               activeStyle={{
                 fontWeight: 'bold',

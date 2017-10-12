@@ -7,6 +7,7 @@ import {BrowserRouter,Route,Switch} from 'react-router-dom';
 import Home from './components/homepage/homepage';
 import Autos from './components/autopage/autopage';
 import About from './components/aboutpage/aboutpage';
+import Customer from './components/customerpage/customerpage';
 
 /** create store **/
 import { createStore, applyMiddleware } from 'redux';
@@ -24,6 +25,7 @@ ReactDOM.render(
           <Route path='/login' component={() => 
             window.location = 'http://ec2-13-57-125-176.us-west-1.compute.amazonaws.com:8080/'
           }/>
+          <Route path='/customer' component={Customer} />
           <Route path='/' component={Home} />
         </Switch>
       </div>
