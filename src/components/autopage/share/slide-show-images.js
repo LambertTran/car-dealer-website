@@ -1,6 +1,4 @@
 import React,{Component} from 'react';
-import Hammer from 'hammerjs';
-import $ from 'jquery';
 import 'bootstrap/js/carousel.js';
 
 
