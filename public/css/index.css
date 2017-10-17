@@ -208,10 +208,10 @@ footer {
   border: 5px solid #CC0000;
   background-color: white;
   margin-bottom: 15px; }
-  .car-item h5 {
+  .car-item h6 {
     color: black;
     padding: 15px; }
-    .car-item h5 em {
+    .car-item h6 em {
       border-style: groove;
       background-color: #BFC9CA;
       padding: 5px; }
@@ -254,7 +254,13 @@ footer {
     text-align: center; }
 
 .description {
-  white-space: pre; }
+  white-space: pre-wrap;
+  overflow: hidden;
+  text-align: left;
+  margin-left: 50px; }
+
+.float-left h3 {
+  text-align: left; }
 
 .aboutpage {
   height: 100%;

@@ -6,6 +6,7 @@ import ShowCarDetail from '../share/show-car-detail';
 
 const customStyles={
   content:{
+    width                 : '93%',
     top                   : '55%',
     left                  : '50%',
     right                 : 'auto',

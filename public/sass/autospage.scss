@@ -27,7 +27,7 @@
   border: 5px solid $car-item-border;
   background-color:white;
   margin-bottom: 15px;
-  h5{
+  h6{
     color:black;
     padding: 15px;
     
@@ -81,5 +81,14 @@
   }
 }
 .description{
-  white-space: pre;
+  white-space: pre-wrap;
+  overflow: hidden;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.float-left{
+  h3{
+    text-align:left;
+  }
 }
