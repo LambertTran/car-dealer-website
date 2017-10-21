@@ -1,12 +1,13 @@
 import axios from 'axios';
 
-const URL ='//login.auto27.us/api' 
+// const URL ='//login.auto27.us/api' 
+const  URL = 'http://localhost:8080/api/';
 
-export function fetchAllCars(callback){
+
+export function fetchAllCars(){
   const req = axios.get(`${URL}/cars`)
-
   return {
-    type:'FETCH-ALL',
+    type:'FETCH-CARS',
     payload:req
   }
 }
@@ -16,14 +17,11 @@ export function sendEmail(data){
   return;
 }
 
-
-/*export function UploadCar(data){
-  console.log(data)
-  const req = axios.post(`${URL}/images`,data)
-    .then(() => console.log('yes'));
-  
+export function fetchCustomerImages(){
+  const req = axios.get(`${URL}/customers`);
   return {
-    type:'UPLOAD',
+    type:'FETCH-CUSTOMERS',
     payload:req
   }
-}*/
+}
+

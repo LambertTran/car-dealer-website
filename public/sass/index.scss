@@ -25,60 +25,10 @@ html,body{
 
 @import 'homepage';
 @import 'autospage';
+@import 'aboutpage';
 
 
-.aboutpage{
-  height:100%;
+.customer-page{
+  padding-top:70px;
   width:100%;
-  display: block;
-  background-color: $about-bg;
-  @media screen and (min-width:767px){
-    height:100vh;
-  }
-}
-.about-header{
-  padding-top:80px;
-  text-align: center;
-  h1{
-    color:white;
-  }
-  hr{
-    border-top: 2px solid white;
-    margin-bottom:50px;
-    @media screen and (min-width:767px){
-      margin-bottom: 100px;
-    }
-  }
-}
-
-.contact-info{
-  margin-bottom: 50px;
-  div{
-    padding-left:20px;
-    margin-bottom:10px;
-    display:inline-block;
-    width:100%;
-    i{
-      float:left;
-      color:white;
-    }
-    p{
-      float:left;
-      margin-left:15px;
-      color:white;
-    }
-  }
-}
-
-.contact-form{
-  text-align: center;
-  margin-bottom: 60px;
-  button{
-    margin: 0 auto;
-    background-color:$nav-bar-bg;
-    border-color:$nav-bar-bg;
-  }
-  textarea{
-    height:200px;
-  }
 }
