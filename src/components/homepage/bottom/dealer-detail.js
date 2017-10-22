@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 
 /** Images **/
-import stickshift from '../../../images/stickshift3.jpg';
+import carBg2 from '../../../images/car1.jpg';
 
 export default class DealerDetail extends Component{
   render(){
     var bgImg2 = {
-      backgroundImage: `url(${stickshift})`
+      backgroundImage: `url(${carBg2})`
     }
     return(
       <section className="row">

@@ -4,7 +4,7 @@ import HomeTyping from './home-typing';
 import ViewAutos from './view-autos';
 
 /** Image **/
-import blackRed from '../../../images/car-nature.jpg';
+import blackRed from '../../../images/car5.jpg';
 
 class MainHomePage extends Component{
   render(){

@@ -11,11 +11,8 @@ class CustomerImages extends Component{
   
   renderCustomerImages(img){
     return (
-      <div className="card">
-        <img className="card-img-top" src={img} alt="Card image cap" />
-        <div className="card-body">
-          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
+      <div className="col-6 col-md-4 col-lg-3">
+        <img className="img-thumbnail" src={img} alt="Card image cap" />
       </div>
     )
   }
@@ -25,8 +22,10 @@ class CustomerImages extends Component{
     console.log(customers);
     return(
       <div className="customer-page">
-        <div className="card-columns">
-          {customers.map(customer => this.renderCustomerImages(customer.paths))}
+        <div className="container">
+          <div className = "row">        
+            {customers.map(customer => this.renderCustomerImages(customer.paths))}
+          </div>
         </div>
       </div>
     )
