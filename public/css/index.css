@@ -5,6 +5,11 @@ html, body {
 .container-fluid {
   min-height: 100%; }
 
+#root {
+  height: 100%; }
+  #root > [data-reactroot] {
+    height: 100%; }
+
 /** Properties **/
 /** Style **/
 nav a {
@@ -16,7 +21,8 @@ nav a {
       font-size: 25px; } }
 
 .navbar {
-  padding: 0; }
+  padding: 0;
+  border-bottom: 1px solid #ddd; }
 
 .navbar-brand {
   margin: 0;
@@ -143,26 +149,26 @@ nav a {
     color: white;
     text-align: center; }
 
-.dealer-detail, .time {
+.dealer-detail, .time, .sale-detail {
   background-color: rgba(204, 0, 0, 0.6);
   color: white;
   margin: 10px 0;
   border-style: solid; }
-  .dealer-detail ul, .time ul {
+  .dealer-detail ul, .time ul, .sale-detail ul {
     list-style: none; }
-    .dealer-detail ul li, .time ul li {
+    .dealer-detail ul li, .time ul li, .sale-detail ul li {
       font-size: 1.3rem; }
-      .dealer-detail ul li::before, .time ul li::before {
+      .dealer-detail ul li::before, .time ul li::before, .sale-detail ul li::before {
         content: "\2713"; }
   @media screen and (min-width: 767px) {
-    .dealer-detail, .time {
+    .dealer-detail, .time, .sale-detail {
       max-width: 65%;
       margin: 0 auto;
       margin-top: 20px; }
-      .dealer-detail ul li, .time ul li {
+      .dealer-detail ul li, .time ul li, .sale-detail ul li {
         font-size: 2.0rem; } }
   @media screen and (min-width: 767px) {
-    .dealer-detail, .time {
+    .dealer-detail, .time, .sale-detail {
       max-width: 40%;
       margin-top: 40px; } }
 
@@ -312,8 +318,40 @@ footer {
   .contact-form textarea {
     height: 200px; }
 
-.customer-page {
-  padding-top: 70px;
+.page {
+  height: 100%;
   width: 100%; }
+
+.customer-page {
+  padding-top: 80px;
+  width: 100%;
+  background-color: white;
+  height: 100%; }
+
+.img-col {
+  padding-left: 0;
+  padding-right: 0; }
+
+.img-thumbnail {
+  width: 187.5px;
+  height: 187.5px;
+  margin-bottom: 5px; }
+  @media screen and (min-width: 767px) {
+    .img-thumbnail {
+      width: 256px;
+      height: 256px; } }
+  @media screen and (min-width: 1023px) {
+    .img-thumbnail {
+      width: 256px;
+      height: 256px; } }
+
+.sale-detail {
+  background-color: white;
+  color: black;
+  max-width: 100%;
+  border-style: none; }
+  .sale-detail ul {
+    padding: 5px;
+    width: 100%; }
 
 /*# sourceMappingURL=index.css.map */

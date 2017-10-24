@@ -11,8 +11,8 @@ class CustomerImages extends Component{
   
   renderCustomerImages(img){
     return (
-      <div className="col-6 col-md-4 col-lg-3">
-        <img className="img-thumbnail" src={img} alt="Card image cap" />
+      <div className="col-6 col-md-4 col-lg-3 img-col">
+        <img className="img-thumbnail" src={img} alt="" />
       </div>
     )
   }

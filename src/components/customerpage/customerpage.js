@@ -8,7 +8,7 @@ import CustomerImages from './customer-images';
 export default class Customer extends Component{
   render(){
     return(
-      <div>
+      <div className="page">
         <NavBar />
         <CustomerImages />
       </div>
