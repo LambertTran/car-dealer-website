@@ -8,6 +8,7 @@ import Home from './components/homepage/homepage';
 import Autos from './components/autopage/autopage';
 import About from './components/aboutpage/aboutpage';
 import Customer from './components/customerpage/customerpage';
+import Sale from './components/salepage/salepage';
 
 /** create store **/
 import { createStore, applyMiddleware } from 'redux';
@@ -21,6 +22,7 @@ ReactDOM.render(
       <div>
         <Switch>
           <Route path='/autos' component={Autos} />
+          <Route path='/sale'  component={Sale}  />
           <Route path='/about' component={About} />
           <Route path='/login' component={() => 
             window.location = 'http://ec2-13-57-125-176.us-west-1.compute.amazonaws.com:8080/'
