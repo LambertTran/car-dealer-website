@@ -71,7 +71,7 @@ class Autos extends Component{
 
   render(){
     const { width } = this.state;
-    const isMobile = width < 770;
+    const isMobile = width < 768;
     
     return (
       <div>

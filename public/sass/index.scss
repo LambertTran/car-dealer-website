@@ -11,14 +11,16 @@ $dealer-detail: rgba(204,0,0,0.6);
 $footer-bg : #333333;
 $footer-text: #cccccc;
 // autos page
-$auto-bg : #333333;
+// $auto-bg : #333333;
+$auto-bg : #424949;
 $car-item-border: #CC0000; 
 // sale page
-$sale-bg: #f2f2f2;
+$sale-bg: #424949;
 // customer page
 $customer-bg: #f2f2f2; 
 // about page
-$about-bg : #333333;
+// $about-bg : #333333;
+$about-bg : #424949;
 
 
 html,body{
@@ -48,6 +50,7 @@ $width-lg:1024px;
   width:100%;
   background-color:$sale-bg;
   height:100%;
+  position: relative;
 }
 .img-col{
   padding-left:0;
@@ -67,15 +70,44 @@ $width-lg:1024px;
   }
 }
 
+.sale-page{
+  @extend .customer-page;
+  .container{
+    height:95%;
+  }
+}
+
+.sale-pos{
+  margin-top:20px;
+  position:relative;
+}
 
 .sale-detail{
   @extend .dealer-detail;
   background-color:$sale-bg !important;
-  color:black;
+  color:white;
   max-width:100%;
   border-style:none;
   ul{
     padding:5px;
     width: 100%;
+  }
+}
+.sale-contact{
+  color:white;
+  margin-top:20px;
+  text-align:center;
+  position:relative;
+  margin:auto;
+  top:25%;
+  @media screen and (min-width:767px){
+    h3{
+      font-size:25px;
+    }
+  }
+  @media screen and (min-width:1023px){
+    h3{
+      font-size:35px;
+    }
   }
 }

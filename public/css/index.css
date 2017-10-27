@@ -159,7 +159,7 @@ nav a {
     .dealer-detail ul li, .time ul li, .sale-detail ul li {
       font-size: 1.3rem; }
       .dealer-detail ul li::before, .time ul li::before, .sale-detail ul li::before {
-        content: "\2713"; }
+        content: "\2713  "; }
   @media screen and (min-width: 767px) {
     .dealer-detail, .time, .sale-detail {
       max-width: 65%;
@@ -199,7 +199,7 @@ footer {
 /*** autos **/
 /*** mobile view **/
 .mobile-view {
-  background-color: #333333;
+  background-color: #424949;
   display: block;
   position: relative;
   min-height: 100% !important;
@@ -225,10 +225,13 @@ footer {
       border-style: groove;
       background-color: #BFC9CA;
       padding: 5px; }
+  .car-item .img-thumbnail {
+    width: 100%;
+    height: 100%; }
 
 /** Desktop View **/
 .desktop-view {
-  background-color: #333333;
+  background-color: #424949;
   height: 100vh;
   width: 100vw; }
 
@@ -252,6 +255,7 @@ footer {
   display: block;
   overflow: auto;
   margin: 20px;
+  margin: 10px;
   width: 60%;
   float: right;
   text-align: center;
@@ -276,7 +280,7 @@ footer {
   height: 100%;
   width: 100%;
   display: block;
-  background-color: #333333; }
+  background-color: #424949; }
   @media screen and (min-width: 767px) {
     .aboutpage {
       height: 100vh; } }
@@ -314,7 +318,8 @@ footer {
   .contact-form button {
     margin: 0 auto;
     background-color: white;
-    border-color: white; }
+    border-color: white;
+    color: black; }
   .contact-form textarea {
     height: 200px; }
 
@@ -322,11 +327,12 @@ footer {
   height: 100%;
   width: 100%; }
 
-.customer-page {
+.customer-page, .sale-page {
   padding-top: 80px;
   width: 100%;
-  background-color: #f2f2f2;
-  height: 100%; }
+  background-color: #424949;
+  height: 100%;
+  position: relative; }
 
 .img-col {
   padding-left: 0;
@@ -345,13 +351,34 @@ footer {
       width: 256px;
       height: 256px; } }
 
+.sale-page .container {
+  height: 95%; }
+
+.sale-pos {
+  margin-top: 20px;
+  position: relative; }
+
 .sale-detail {
-  background-color: #f2f2f2 !important;
-  color: black;
+  background-color: #424949 !important;
+  color: white;
   max-width: 100%;
   border-style: none; }
   .sale-detail ul {
     padding: 5px;
     width: 100%; }
+
+.sale-contact {
+  color: white;
+  margin-top: 20px;
+  text-align: center;
+  position: relative;
+  margin: auto;
+  top: 25%; }
+  @media screen and (min-width: 767px) {
+    .sale-contact h3 {
+      font-size: 25px; } }
+  @media screen and (min-width: 1023px) {
+    .sale-contact h3 {
+      font-size: 35px; } }
 
 /*# sourceMappingURL=index.css.map */

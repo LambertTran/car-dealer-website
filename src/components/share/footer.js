@@ -7,8 +7,7 @@ export default class Footer extends Component{
     return(
       <div className="row">
         <footer className="footer" style={style}>
-          <p>Copyright © 2017. All rights reserved</p>
-          <p> Developed by &nbsp; 
+          <p>Copyright © 2017. Developed by &nbsp; 
             <a href="http://lbtran.com/">
               Lambert Tran
             </a>
