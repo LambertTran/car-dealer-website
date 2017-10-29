@@ -220,7 +220,8 @@ footer {
   margin-bottom: 15px; }
   .car-item h6 {
     color: black;
-    padding: 15px; }
+    padding: 15px;
+    line-height: 2; }
     .car-item h6 em {
       border-style: groove;
       background-color: #BFC9CA;
@@ -277,7 +278,6 @@ footer {
   text-align: left; }
 
 .aboutpage {
-  height: 100%;
   width: 100%;
   display: block;
   background-color: #424949; }
