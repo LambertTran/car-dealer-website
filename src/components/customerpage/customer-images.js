@@ -19,7 +19,6 @@ class CustomerImages extends Component{
 
   render(){
     let customers = this.props.customers;
-    console.log(customers);
     return(
       <div className="customer-page">
         <div className="container">
