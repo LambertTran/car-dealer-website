@@ -13,7 +13,7 @@ export default class DealerDetail extends Component{
         <div className="home fixed-attachment reduced-size" style={bgImg2}>
           <div className="col-12">
             <div className="row">
-              <h1>Auto 27</h1>
+              <h1>AUTO27</h1>
               <h1>(916) 993-0999</h1>
               <div className="col-12 col-sm-12 col-lg-8 dealer-detail">
                 <ul>
