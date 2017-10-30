@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 /** Images **/
-import carBg2 from '../../../images/car1.jpg';
+import carBg2 from '../../../images/merce.jpg';
 
 export default class DealerDetail extends Component{
   render(){
