@@ -1,14 +1,14 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
 
-import logo from '../../images/logo.jpg';
+import logo from '../../images/logo.png';
 
 export default function NavBar(){
   return(
-    <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
+    <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
       <a className="navbar-brand" href="/">
-        <img className="float-left" src={logo} alt="" width="90" height="70" />
-        <h4 className="float-left"> AUTO27</h4>
+        <img className="float-left" src={logo} alt="" width="60" height="60" />
+        <h4 className="float-left"> Auto27</h4>
       </a>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
@@ -20,7 +20,7 @@ export default function NavBar(){
               to='/' exact 
               activeStyle={{
                 fontWeight: 'bold',
-                color: 'white'
+                color: 'white !important'
               }}
               className="nav-link"
               > Home 
@@ -31,7 +31,7 @@ export default function NavBar(){
               to='/autos' exact 
               activeStyle={{
                 fontWeight: 'bold',
-                color: 'white'
+                color: 'white !important'
               }} 
               className="nav-link"
               > Inventory 
@@ -42,7 +42,7 @@ export default function NavBar(){
               to='/sale' exact 
               activeStyle={{
                 fontWeight: 'bold',
-                color: 'white'
+                color: 'white !important'
               }} 
               className="nav-link"
               > Sell your car 
@@ -53,7 +53,7 @@ export default function NavBar(){
               to='/customer' exact 
               activeStyle={{
                 fontWeight: 'bold',
-                color: 'black'
+                color: 'white !important'
               }}
               className="nav-link"
               > Happy Customers 
@@ -64,7 +64,7 @@ export default function NavBar(){
               to='/about' exact 
               activeStyle={{
                 fontWeight: 'bold',
-                color: 'black'
+                color: 'white !important'
               }}
               className="nav-link"
               > About 

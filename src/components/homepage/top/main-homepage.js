@@ -4,19 +4,19 @@ import HomeTyping from './home-typing';
 import ViewAutos from './view-autos';
 
 /** Image **/
-import blackRed from '../../../images/car5.jpg';
+import blackRed from '../../../images/mercedes.jpg';
 
 class MainHomePage extends Component{
   render(){
     var bgImg={
       backgroundImage: `url(${blackRed})`
     }
+          // <HomeTyping strings={["QUALITY.","VALUE.","SATISFACTION."]} />
+          // <ViewAutos />
 
     return(
       <section className="row">
         <div className="home fixed-attachment" style={bgImg}>
-          <HomeTyping strings={["QUALITY.","VALUE.","SATISFACTION."]} />
-          <ViewAutos />
           <div className="down-btn">
             <a className="btn" onClick={() => this.props.handleScroll()}>
               <i className="fa fa-arrow-circle-down fa-4x" aria-hidden="true"></i>
