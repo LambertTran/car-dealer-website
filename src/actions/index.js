@@ -1,7 +1,8 @@
 import axios from 'axios';
 
-const URL ='//login.auto27.us/api' 
-// const  URL = 'http://localhost:8080/api/';
+// const URL ='//login.auto27.us/api' 
+const URL = 'http://ec2-52-52-42-92.us-west-1.compute.amazonaws.com:8080/api/auto27';
+// const  URL = 'http://localhost:8080/api/auto27';
 
 
 export function fetchAllCars(){
